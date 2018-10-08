@@ -2185,16 +2185,16 @@ fieldset[disabled] a.btn {
 }
 
 .btn-outline-primary {
-    color: #5867dd;
+    color: #e98f00;
     background-color: transparent;
     background-image: none;
-    border-color: #5867dd
+    border-color: #e98f00
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #5867dd;
-    border-color: #5867dd
+    background-color: #e98f00;
+    border-color: #e98f00
 }
 
 .btn-outline-primary.focus,
@@ -2204,7 +2204,7 @@ fieldset[disabled] a.btn {
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-    color: #5867dd;
+    color: #e98f00;
     background-color: transparent
 }
 
@@ -2212,8 +2212,8 @@ fieldset[disabled] a.btn {
 .btn-outline-primary:active,
 .show>.btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #5867dd;
-    border-color: #5867dd
+    background-color: #e98f00;
+    border-color: #e98f00
 }
 
 .btn-outline-secondary {
@@ -2442,7 +2442,7 @@ fieldset[disabled] a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: #5867dd;
+    color: #e98f00;
     border-radius: 0
 }
 
@@ -8721,29 +8721,29 @@ a.text-dark:hover {
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-    background-color: #5867dd;
-    border-color: #5867dd
+    background-color: #e98f00;
+    border-color: #e98f00
 }
 
 .btn-primary.active,
 .btn-primary:active,
 .show>.btn-primary.dropdown-toggle {
-    background-color: #384ad7;
+    background-color: #e98f00;
     background-image: none;
-    border-color: #2e40d4
+    border-color: #e98f00
 }
 
 .btn-outline-primary {
-    color: #5867dd;
+    color: #e98f00;
     background-color: transparent;
     background-image: none;
-    border-color: #5867dd
+    border-color: #e98f00
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #5867dd;
-    border-color: #5867dd
+    background-color: #e98f00;
+    border-color: #e98f00
 }
 
 .btn-outline-primary.focus,
@@ -8753,7 +8753,7 @@ a.text-dark:hover {
 
 .btn-outline-primary.disabled,
 .btn-outline-primary:disabled {
-    color: #5867dd;
+    color: #e98f00;
     background-color: transparent
 }
 
@@ -8761,8 +8761,8 @@ a.text-dark:hover {
 .btn-outline-primary:active,
 .show>.btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #5867dd;
-    border-color: #5867dd
+    background-color: #e98f00;
+    border-color: #e98f00
 }
 
 .btn-success {
