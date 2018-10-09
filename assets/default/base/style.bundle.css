@@ -12418,10 +12418,11 @@ body.m--skin-dark {
         flex: 1
     }
     .m-grid.m-grid--ver-desktop.m-grid--desktop>.m-grid__item {
-        flex: 0 0 auto
+        flex: 0 0 auto;
+
     }
     .m-grid.m-grid--ver-desktop.m-grid--desktop>.m-grid__item.m-grid__item--fluid {
-        flex: 1
+        flex: 1;
     }
     .m-grid.m-grid--ver-desktop.m-grid--desktop>.m-grid__item.m-grid__item--order-desktop-1 {
         order: 1
@@ -40030,36 +40031,37 @@ body.m-content--skin-light2 {
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__heading .m-menu__ver-arrow,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item>.m-menu__link .m-menu__ver-arrow {
-    color: #525672
+    color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open {
-    background-color: #292b3a
+    background-color: #5d6184;
+    border-left: 5px solid #f29500;
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__heading .m-menu__link-text,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__link .m-menu__link-text {
-    color: #868aa8
+    color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__heading .m-menu__link-icon,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__link .m-menu__link-icon {
-    color: #8c8ea4
+    color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__heading .m-menu__link-bullet.m-menu__link-bullet--dot>span,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__link .m-menu__link-bullet.m-menu__link-bullet--dot>span {
-    background-color: #8c8ea4
+    background-color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__heading .m-menu__link-bullet.m-menu__link-bullet--line>span,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__link .m-menu__link-bullet.m-menu__link-bullet--line>span {
-    background-color: #8c8ea4
+    background-color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__heading .m-menu__ver-arrow,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--open>.m-menu__link .m-menu__ver-arrow {
-    color: #8c8ea4
+    color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded {
@@ -40163,27 +40165,27 @@ body.m-content--skin-light2 {
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__heading .m-menu__link-text,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__link .m-menu__link-text {
-    color: #686c89
+    color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__heading .m-menu__link-icon,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__link .m-menu__link-icon {
-    color: #525672
+    color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__heading .m-menu__link-bullet.m-menu__link-bullet--dot>span,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__link .m-menu__link-bullet.m-menu__link-bullet--dot>span {
-    background-color: #525672
+    background-color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__heading .m-menu__link-bullet.m-menu__link-bullet--line>span,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__link .m-menu__link-bullet.m-menu__link-bullet--line>span {
-    background-color: #525672
+    background-color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__heading .m-menu__ver-arrow,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item>.m-menu__link .m-menu__ver-arrow {
-    color: #525672
+    color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--open>.m-menu__heading .m-menu__link-text,
