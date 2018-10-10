@@ -40070,27 +40070,28 @@ body.m-content--skin-light2 {
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__heading .m-menu__link-text,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__link .m-menu__link-text {
-    color: #868aa8
+    color: #fff;
+    font-weight: bold;
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__heading .m-menu__link-icon,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__link .m-menu__link-icon {
-    color: #8c8ea4
+    color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__heading .m-menu__link-bullet.m-menu__link-bullet--dot>span,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__link .m-menu__link-bullet.m-menu__link-bullet--dot>span {
-    background-color: #8c8ea4
+    background-color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__heading .m-menu__link-bullet.m-menu__link-bullet--line>span,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__link .m-menu__link-bullet.m-menu__link-bullet--line>span {
-    background-color: #8c8ea4
+    background-color: #fff
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__heading .m-menu__ver-arrow,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item.m-menu__item--expanded>.m-menu__link .m-menu__ver-arrow {
-    color: #8c8ea4
+    color: #fff
 }
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item{
     border-left: 5px solid #0f1018; 
@@ -40190,7 +40191,8 @@ body.m-content--skin-light2 {
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--open>.m-menu__heading .m-menu__link-text,
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--open>.m-menu__link .m-menu__link-text {
-    color: #868aa8
+    color: #fff;
+    font-weight: bold;
 }
 
 .m-aside-menu.m-aside-menu--skin-dark .m-menu__nav>.m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--open>.m-menu__heading .m-menu__link-icon,
@@ -41895,12 +41897,39 @@ span.number {
 .flex-box-2.blue {
     border-bottom-color: #88c7f4;
 }
+.m-badge-large--success.m-badge--wide {
+    padding: 10px 35px;
+    background-color: #3e7e0e42;
+    color: #3e7e0e;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.marg-top-1rem{
+    margin-top: 1rem;
+}
+.marg-left-1rem{
+    margin-left: 1rem;
+}
+.marg-right-1rem{
+    margin-right: 1rem;
+}
 .clearfix{
     display: block;
     clear: both;
     overflow: hidden;
 }
+.m-datatable.m-datatable--default>.m-datatable__table {
+    background-color: #fff;
+    display: block;
+    height: auto;
+    overflow-x: auto;
+}
  @media (min-width:993px) {
+  .m-datatable__cell span {
+     width: 216px !important;
+     display: block
+  }
+
     .widget-blocks {
         border: 2px solid #efefef;
         padding: 20px;
