@@ -41834,6 +41834,72 @@ button.btn.btn-login {
     color: #fff;
     padding-bottom: 3rem
 }
+.sequence-dashboard{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.flex-box-2 {
+    width: 49%;
+    border: 1px solid #c6c7d1;
+    padding: 0 5rem;
+    padding-bottom: 3rem;
+    margin: 0.5rem 0;
+    margin-top: 1rem;
+    border-bottom: 35px solid;
+}
+span.number {
+    font-size: 14rem;
+    border-bottom: 5px solid;
+    margin-right: 35%;
+}
+.flex-box-footer{
+  margin: 3rem 0;
+  display: block;
+  clear: both;
+
+}
+.flex-box-footer .text{
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+}
+.flex-box-footer button{
+    float: right;
+    font-size: 20px;
+}
+.display-inline-block{
+    display: inline-block;
+}
+.purple-color {
+    color: #716aca;
+}
+.green-color {
+    color: #34bfa3;
+}
+.yellow-color {
+    color: #f48f51;
+}
+.blue-color {
+    color: #127dc9;
+}
+.flex-box-2.grey {
+    border-bottom-color: #e1e2ed;
+}
+.flex-box-2.green {
+    border-bottom-color: #e1edeb;
+}
+.flex-box-2.yellow {
+    border-bottom-color: #fdd99f;
+}
+.flex-box-2.blue {
+    border-bottom-color: #88c7f4;
+}
+.clearfix{
+    display: block;
+    clear: both;
+    overflow: hidden;
+}
  @media (min-width:993px) {
     .widget-blocks {
         border: 2px solid #efefef;
@@ -41923,6 +41989,9 @@ button.btn.btn-login {
 }
 
 @media (max-width:992px) {
+    .flex-box-2 {
+        width: 100%;
+    }
     .m-footer {
         height: auto;
         padding: 7px 20px
