@@ -1938,14 +1938,14 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #5867dd;
-    border-color: #5867dd
+    background-color: #f29500;
+    border-color: #f29500
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #384ad7;
-    border-color: #2e40d4
+    background-color: #f29500;
+    border-color: #f29500
 }
 
 .btn-primary.focus,
@@ -1955,16 +1955,16 @@ fieldset[disabled] a.btn {
 
 .btn-primary.disabled,
 .btn-primary:disabled {
-    background-color: #5867dd;
-    border-color: #5867dd
+    background-color: #f29500;
+    border-color: #f29500
 }
 
 .btn-primary.active,
 .btn-primary:active,
 .show>.btn-primary.dropdown-toggle {
-    background-color: #384ad7;
+    background-color: #f29500;
     background-image: none;
-    border-color: #2e40d4
+    border-color: #f29500
 }
 
 .btn-secondary {
@@ -41923,6 +41923,15 @@ span.number {
     display: block;
     height: auto;
     overflow-x: auto;
+}
+.border-area .custom-select{
+    background-color: #f2f3f8;
+    text-align: center
+}
+.border-area{
+    border: 1px solid #b4b4b4;
+    margin: 0 0;
+    padding: 20px 0;
 }
  @media (min-width:993px) {
   .m-datatable__cell span {

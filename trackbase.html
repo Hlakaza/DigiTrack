@@ -536,7 +536,69 @@
 										</ul>
 										<div class="tab-content">
 											<div class="tab-pane active" id="CreateSequence" role="tabpanel">
-												
+												<form class="create-sequence--form marg-top-1rem">
+													<div class="row">
+															<div class="col-lg-6">
+																	<label>Sequence Name</label>
+																	<input type="text" class="form-control m-input" placeholder="Type Sequence Name">
+															</div>
+															<div class="col-lg-6">
+																	<label>Sequence Type</label>
+																	<input type="text" class="form-control m-input" placeholder="Type Sequence type">
+															</div>
+				                                           <div class="col-sm-12  marg-top-1rem">
+																<label>Process Owner</label>
+																<div class="row border-area">
+																		<div class="col-lg-6">
+																				<select class="custom-select">
+																						<option disabled selected>Create from employee list</option>
+																						<option value="1">John Doe</option>
+																				</select>
+																		</div>
+																		<div class="col-lg-6">
+																				<select class="custom-select">
+																						<option disabled selected>Create New (New Registration)</option>
+																						<option value="1">Jabulani khumalo</option>
+																				</select>
+																		</div>
+																		
+																</div>
+																<label class="marg-top-1rem">Process Manager</label>
+																<div class="row border-area">
+																		<div class="col-lg-6">
+																				<select class="custom-select">
+																						<option disabled selected>Create from employee list</option>
+																						<option value="1">John Doe</option>
+																				</select>
+																		</div>
+																		<div class="col-lg-6">
+																				<select class="custom-select">
+																						<option disabled selected>Create New (New Registration)</option>
+																						<option value="1">Jabulani khumalo</option>
+																				</select>
+																		</div>
+																		<div class="col-lg-6 marg-top-1rem">
+																				<span class="display-inline-block">Set time from time picker</span>
+																				<input style="width: auto" class="form-control m-input display-inline-block" type="time" value="13:45:00">
+																		</div>
+																		
+																</div>
+														   </div>
+
+														   <label class="col-12 marg-top-1rem">Sequence Start Point</label>
+														   <div class="col-lg-6">
+																<input type="text" class="form-control m-input" placeholder="Specify Node">
+														</div>
+														<div class="col-lg-6">
+																<input type="text" class="form-control m-input" placeholder="Specify Role">
+														</div>
+													</div>
+													<div class="text-center">
+															<button type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
+															          Submit
+															</button>
+														</div>
+												</form>
 											</div>
 											<div class="tab-pane active" id="CreateSteps" role="tabpanel">
 												</div>
