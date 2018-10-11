@@ -8704,14 +8704,14 @@ a.text-dark:hover {
 
 .btn-primary {
     color: #fff;
-    background-color: #5867dd;
-    border-color: #5867dd
+    background-color: #e98f00;
+    border-color: #e98f00
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #384ad7;
-    border-color: #2e40d4
+    background-color: #e98f00;
+    border-color: #e98f00
 }
 
 .btn-primary.focus,
