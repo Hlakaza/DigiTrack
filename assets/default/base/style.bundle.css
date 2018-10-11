@@ -41933,6 +41933,9 @@ span.number {
     margin: 0 0;
     padding: 20px 0;
 }
+.cursor-pointer{
+  cursor: pointer
+}
  @media (min-width:993px) {
   .m-datatable__cell span {
      width: 216px !important;

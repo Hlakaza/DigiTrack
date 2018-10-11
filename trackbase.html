@@ -429,96 +429,100 @@
 										</div>
 									</div>
 								</div>
+
 								<div class="tab-pane" id="WorkflowDesigner" role="tabpanel">
-									<div class="marg-top-1rem">
-										<h3 class="display-inline-block text-bold marg-right-1rem">Sequence List</h3> <span class="m-badge m-badge-large--success m-badge--wide">
-											Design New sequence
-										</span>
-									</div>
+									<div class="toggle-sequence">
+										<div class="marg-top-1rem">
+											<h3 class="display-inline-block text-bold marg-right-1rem">Sequence List</h3> <span onclick="toggle_visibility('toggle-sequence')"
+											 class="cursor-pointer m-badge m-badge-large--success m-badge--wide">
+												Design New sequence
+											</span>
+										</div>
 
-									<div class="marg-top-1rem">
-										<table class="m-datatable" id="html_table" width="100%">
-											<thead>
-												<tr>
-													<th title="Field #1">No</th>
-													<th data-sort="asc" title="Field #2">Sequence Name</th>
-													<th title="Field #3">Sequence Type</th>
-													<th title="Field #4">Process Owner</th>
-													<th title="Field #5">Sequence Manager</th>
-													<th title="Field #6">Actions</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>01</td>
-													<td><b>liquam tincidunt mauris eu risus.</b></td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>
-														<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-														<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-													</td>
-												</tr>
-												<tr>
-													<td>02</td>
-													<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>
-														<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-														<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-													</td>
-												</tr>
-												<tr>
-													<td>03</td>
-													<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>
-														<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-														<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-													</td>
-												<tr>
-													<td>04</td>
-													<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>
-														<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-														<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-													</td>
-												</tr>
-												<tr>
-													<td>05</td>
-													<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>
-														<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-														<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-													</td>
-												</tr>
-												<tr>
-													<td>06</td>
-													<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>Donsectetur adipisci</td>
-													<td>
-														<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-														<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-													</td>
-												</tr>
+										<div class="marg-top-1rem">
+											<table class="m-datatable" id="html_table" width="100%">
+												<thead>
+													<tr>
+														<th title="Field #1">No</th>
+														<th data-sort="asc" title="Field #2">Sequence Name</th>
+														<th title="Field #3">Sequence Type</th>
+														<th title="Field #4">Process Owner</th>
+														<th title="Field #5">Sequence Manager</th>
+														<th title="Field #6">Actions</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>01</td>
+														<td><b>liquam tincidunt mauris eu risus.</b></td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>
+															<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
+															<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
+														</td>
+													</tr>
+													<tr>
+														<td>02</td>
+														<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>
+															<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
+															<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
+														</td>
+													</tr>
+													<tr>
+														<td>03</td>
+														<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>
+															<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
+															<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
+														</td>
+													<tr>
+														<td>04</td>
+														<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>
+															<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
+															<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
+														</td>
+													</tr>
+													<tr>
+														<td>05</td>
+														<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>
+															<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
+															<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
+														</td>
+													</tr>
+													<tr>
+														<td>06</td>
+														<td><b>Vivamus vestibulum ntulla nec ante.</b></td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>Donsectetur adipisci</td>
+														<td>
+															<button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
+															<button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
+														</td>
+													</tr>
 
-											</tbody>
-										</table>
+												</tbody>
+											</table>
+										</div>
 									</div>
-									<div class="marg-top-1rem new-sequence-form">
+									<div class="toggle-sequence" style="display: none" class="marg-top-1rem new-sequence-form">
 										<div class="marg-top-1rem">
 											<h3 class="display-inline-block text-bold marg-right-1rem">New Sequence</h3>
 										</div>
@@ -538,76 +542,129 @@
 											<div class="tab-pane active" id="CreateSequence" role="tabpanel">
 												<form class="create-sequence--form spacing-top">
 													<div class="row">
-															<div class="col-lg-6">
-																	<label>Sequence Name</label>
-																	<input type="text" class="form-control m-input" placeholder="Type Sequence Name">
-															</div>
-															<div class="col-lg-6">
-																	<label>Sequence Type</label>
-																	<input type="text" class="form-control m-input" placeholder="Type Sequence type">
-															</div>
-				                                           <div class="col-sm-12 spacing-top">
-																<label>Process Owner</label>
-																<div class="row border-area">
-																		<div class="col-lg-6">
-																				<select class="custom-select">
-																						<option disabled selected>Create from employee list</option>
-																						<option value="1">John Doe</option>
-																				</select>
-																		</div>
-																		<div class="col-lg-6">
-																				<select class="custom-select">
-																						<option disabled selected>Create New (New Registration)</option>
-																						<option value="1">Jabulani khumalo</option>
-																				</select>
-																		</div>
-																		
-																</div>
-																<label class="spacing-top">Process Manager</label>
-																<div class="row border-area">
-																		<div class="col-lg-6">
-																				<select class="custom-select">
-																						<option disabled selected>Create from employee list</option>
-																						<option value="1">John Doe</option>
-																				</select>
-																		</div>
-																		<div class="col-lg-6">
-																				<select class="custom-select">
-																						<option disabled selected>Create New (New Registration)</option>
-																						<option value="1">Jabulani khumalo</option>
-																				</select>
-																		</div>
-																		<div class="col-lg-6 spacing-top">
-																				<span class="display-inline-block">Set time from time picker</span>
-																				<input style="width: auto" class="form-control m-input display-inline-block" type="time" value="13:45:00">
-																		</div>
-																		
-																</div>
-														   </div>
-
-														   <label class="col-12 spacing-top">Sequence Start Point</label>
-														   <div class="col-lg-6">
-																<input type="text" class="form-control m-input" placeholder="Specify Node">
+														<div class="col-lg-6">
+															<label>Sequence Name</label>
+															<input type="text" class="form-control m-input" placeholder="Type Sequence Name">
 														</div>
 														<div class="col-lg-6">
-																<input type="text" class="form-control m-input" placeholder="Specify Role">
+															<label>Sequence Type</label>
+															<input type="text" class="form-control m-input" placeholder="Type Sequence type">
+														</div>
+														<div class="col-sm-12 spacing-top">
+															<label>Process Owner</label>
+															<div class="row border-area">
+																<div class="col-lg-6">
+																	<select class="custom-select">
+																		<option disabled selected>Create from employee list</option>
+																		<option value="1">John Doe</option>
+																	</select>
+																</div>
+																<div class="col-lg-6">
+																	<select class="custom-select">
+																		<option disabled selected>Create New (New Registration)</option>
+																		<option value="1">Jabulani khumalo</option>
+																	</select>
+																</div>
+
+															</div>
+															<label class="spacing-top">Process Manager</label>
+															<div class="row border-area">
+																<div class="col-lg-6">
+																	<select class="custom-select">
+																		<option disabled selected>Create from employee list</option>
+																		<option value="1">John Doe</option>
+																	</select>
+																</div>
+																<div class="col-lg-6">
+																	<select class="custom-select">
+																		<option disabled selected>Create New (New Registration)</option>
+																		<option value="1">Jabulani khumalo</option>
+																	</select>
+																</div>
+																<div class="col-lg-6 spacing-top">
+																	<span class="display-inline-block">Set time from time picker</span>
+																	<input style="width: auto" class="form-control m-input display-inline-block" type="time" value="13:45:00">
+																</div>
+
+															</div>
+														</div>
+
+														<label class="col-12 spacing-top">Sequence Start Point</label>
+														<div class="col-lg-6">
+															<input type="text" class="form-control m-input" placeholder="Specify Node">
+														</div>
+														<div class="col-lg-6">
+															<input type="text" class="form-control m-input" placeholder="Specify Role">
 														</div>
 													</div>
 													<div class="text-center">
-															<button type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
-															          Submit
-															</button>
-														</div>
+														<button onclick="toggle_visibility('toggle-sequence')" type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
+															Submit
+														</button>
+													</div>
 												</form>
 											</div>
-											<div class="tab-pane active" id="CreateSteps" role="tabpanel">
-												</div>
+											<div class="tab-pane" id="CreateSteps" role="tabpanel">
+												<form class="create-steps--form spacing-top">
+													<div class="row">
+														<div class="col-lg-6">
+															<label>Step Name</label>
+															<input type="text" name="StepName" class="form-control m-input" placeholder="Type Step Name">
+														</div>
+														<div class="col-lg-6">
+															<label>Step description</label>
+															<input type="text" name="StepDescription" class="form-control m-input" placeholder="Type Step description">
+														</div>
+														<div class="col-sm-12 spacing-top">
+															<label>Step Owner</label>
+															<div class="row border-area">
+																<div class="col-lg-6">
+																	<select class="custom-select">
+																		<option disabled selected>Create from employee list</option>
+																		<option value="1">John Doe</option>
+																	</select>
+																</div>
+																<div class="col-lg-6">
+																	<select class="custom-select">
+																		<option disabled selected>Create New (New Registration)</option>
+																		<option value="1">Jabulani khumalo</option>
+																	</select>
+																</div>
+
+															</div>
+															<label class="spacing-top">Create Activities for this step</label>
+															<div class="row border-area">
+																<div class="col-sm-12">
+																	<select class="custom-select" onclick="modal('activity')">
+																		<option disabled selected>Add Activity</option>
+																	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="text-left">
+															<button data-toggle="modal" data-target="#m_modal_1_2" type="button" href="#" class="b-rad-0 spacing-top btn btn-secondary btn-lg m-btn m-btn--custom m-btn--icon">
+																	<span>
+																		<i class="fa fa-plus-circle"></i>
+																		<span>
+																			Add Another Step
+																		</span>
+																	</span>
+																</button>
+													</div>
+												</form>
+												<div class="spacing-top text-center">
+														<button type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
+															Submit
+														</button>
+													</div>
+											</div>
 										</div>
 									</div>
 
 								</div>
 								<div class="tab-pane" id="SequenceActiveTracks" role="tabpanel">
-
+	
 								</div>
 							</div>
 						</div>
@@ -655,6 +712,50 @@
 	<script src="assets/vendors/custom/fullcalendar/fullcalendar.bundle.js" type="text/javascript"></script>
 	<script src="assets/app/js/dashboard.js" type="text/javascript"></script>
 	<script src="assets/default/custom/components/datatables/base/html-table.js" type="text/javascript"></script>
+    <!-- Modal -->
+		<div class="modal fade show" id="m_modal_1_2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">
+											Modal title
+										</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">
+												×
+											</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="m-scrollable mCustomScrollbar _mCS_3 mCS-autoHide" data-scrollbar-shown="true" data-scrollable="true" data-max-height="200" style="max-height: 200px; height: 200px; position: relative; overflow: visible;"><div id="mCSB_3" class="mCustomScrollBox mCS-minimal-dark mCSB_vertical mCSB_outside" tabindex="0" style="max-height: none;"><div id="mCSB_3_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+											<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+											</p>
+											<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+											</p>
+											<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+											</p>
+										</div></div><div id="mCSB_3_scrollbar_vertical" class="mCSB_scrollTools mCSB_3_scrollbar mCS-minimal-dark mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_3_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 50px; top: 0px; display: block; height: 57px; max-height: 180px;"><div class="mCSB_dragger_bar" style="line-height: 50px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">
+											Close
+										</button>
+										<button type="button" class="btn btn-primary">
+											Save changes
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+<!--  End Modal	-->
+	<script type="text/javascript">
+		function toggle_visibility(id) {
+			$('.' + id).toggle();
+		}
+	</script>
 </body>
 
 </html>
