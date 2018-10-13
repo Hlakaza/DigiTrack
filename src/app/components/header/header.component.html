@@ -1,0 +1,11 @@
+<div class="header-container fixed-top" #mainHeader>
+  <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+      <div class="collapse navbar-collapse">
+          <div class="navbar-nav">
+              <a class="nav-item nav-link" href="#" routerLinkActive="active" routerLink="" [routerLinkActiveOptions]="{exact: true}">Home</a>
+              <a class="nav-item nav-link" href="#" routerLinkActive="active" routerLink="playground">Playground</a>
+          </div>
+      </div>
+  </header>
+  <app-sidenav [ngClass]="this.menuState" (change)="setMenuState($event)"></app-sidenav>
+</div>
