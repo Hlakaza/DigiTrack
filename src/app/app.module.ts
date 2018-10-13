@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 const routes = [
   // { path: 'add', component: AddComponent }
@@ -13,7 +14,8 @@ const routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
