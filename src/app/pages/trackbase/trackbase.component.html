@@ -77,14 +77,14 @@
             <div class="tab-pane" id="WorkflowDesigner" role="tabpanel">
               <div class="toggle-sequence">
                 <div class="marg-top-1rem">
-                  <h3 class="display-inline-block text-bold marg-right-1rem">Sequence List</h3> <span onclick="toggle_visibility('toggle-sequence')"
+                  <h3 class="display-inline-block text-bold marg-right-1rem">Sequence List</h3> <span (click)="show=!show"
                    class="cursor-pointer m-badge m-badge-large--success m-badge--wide">
                     Design New sequence
                   </span>
                 </div>
 
-                <div class="marg-top-1rem">
-                  <table class="m-datatable" id="html_table" width="100%">
+                <div class="marg-top-1rem" *ngIf="!show">
+                  <table class="" width="100%">
                     <thead>
                       <tr>
                         <th title="Field #1">No</th>
@@ -96,77 +96,22 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>01</td>
-                        <td><b>liquam tincidunt mauris eu risus.</b></td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>
+                      <tr *ngFor="let item of sList">
+                        <td>{{item.id}}</td>
+                        <td><b>{{item.sName}}</b></td>
+                        <td>{{item.sType}}</td>
+                        <td>{{item.owner}}</td>
+                        <td>{{item.manager}}</td>
+                        <td class="table-buttons">
                           <button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
                           <button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
                         </td>
                       </tr>
-                      <tr>
-                        <td>02</td>
-                        <td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>
-                          <button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-                          <button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>03</td>
-                        <td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>
-                          <button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-                          <button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-                        </td>
-                      <tr>
-                        <td>04</td>
-                        <td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>
-                          <button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-                          <button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>05</td>
-                        <td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>
-                          <button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-                          <button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>06</td>
-                        <td><b>Vivamus vestibulum ntulla nec ante.</b></td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>Donsectetur adipisci</td>
-                        <td>
-                          <button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
-                          <button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
-                        </td>
-                      </tr>
-
                     </tbody>
                   </table>
                 </div>
               </div>
-              <div class="toggle-sequence" style="display: none" class="marg-top-1rem new-sequence-form">
+              <div *ngIf="show" class="marg-top-1rem new-sequence-form">
                 <div class="marg-top-1rem">
                   <h3 class="display-inline-block text-bold marg-right-1rem">New Sequence</h3>
                 </div>
@@ -183,7 +128,7 @@
 
                 </ul>
                 <div class="tab-content">
-                  <div class="tab-pane active" id="CreateSequence" role="tabpanel">
+                  <div  class="tab-pane active" id="CreateSequence" role="tabpanel">
                     <form class="create-sequence--form spacing-top">
                       <div class="row">
                         <div class="col-lg-6">
@@ -242,13 +187,13 @@
                         </div>
                       </div>
                       <div class="text-center">
-                        <button onclick="toggle_visibility('toggle-sequence')" type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
+                        <button (click)="show=!show" type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
                           Submit
                         </button>
                       </div>
                     </form>
                   </div>
-                  <div class="tab-pane" id="CreateSteps" role="tabpanel">
+                  <div  class="tab-pane" id="CreateSteps" role="tabpanel">
                     <form class="create-steps--form spacing-top">
                       <div class="row">
                         <div class="col-lg-6">
