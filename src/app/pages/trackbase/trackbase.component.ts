@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from 'src/app/components/modals/modal.service';
 
 @Component({
   selector: 'app-trackbase',
@@ -56,9 +57,12 @@ export class TrackbaseComponent implements OnInit {
        'link': '',
     }
   ];
-  constructor() { }
+  constructor(private modal: ModalService) { }
 
   ngOnInit() {
   }
 
+  modalOpen(id) {
+     this.modal.open(id);
+  }
 }

@@ -224,7 +224,7 @@
                           <label class="spacing-top">Create Activities for this step</label>
                           <div class="row border-area">
                             <div class="col-sm-12">
-                              <select class="custom-select" onclick="modal('activity')">
+                              <select class="custom-select" >
                                 <option disabled selected>Add Activity</option>
                               </select>
                             </div>
@@ -232,7 +232,7 @@
                         </div>
                       </div>
                       <div class="text-left">
-                          <button data-toggle="modal" data-target="#m_modal_1_2" type="button" href="#" class="b-rad-0 spacing-top btn btn-secondary btn-lg m-btn m-btn--custom m-btn--icon">
+                          <button (click)="modalOpen('newActivity')" type="button" href="#" class="b-rad-0 spacing-top btn btn-secondary btn-lg m-btn m-btn--custom m-btn--icon">
                               <span>
                                 <i class="fa fa-plus-circle"></i>
                                 <span>

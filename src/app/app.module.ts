@@ -11,6 +11,8 @@ import { LoginComponent } from './components/login/login.component';
 import { AccountManagementComponent } from './pages/account-management/account-management.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TrackbaseComponent } from './pages/trackbase/trackbase.component';
+import { ModalsComponent } from './components/modals/modals.component';
+import { ModalDirective } from './components/modals/modal.directive';
 
 const routes = [
   { path: '', component: DashboardComponent },
@@ -28,7 +30,9 @@ const routes = [
     LoginComponent,
     AccountManagementComponent,
     DashboardComponent,
-    TrackbaseComponent
+    TrackbaseComponent,
+    ModalsComponent,
+    ModalDirective
   ],
   imports: [
     BrowserModule,
