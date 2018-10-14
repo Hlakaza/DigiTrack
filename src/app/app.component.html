@@ -1,0 +1,17 @@
+<div class="m-grid m-grid--hor m-grid--root m-page">
+  <app-modals></app-modals>
+  <header class="m-grid__item m-header " data-minimize-offset="200" data-minimize-mobile-offset="200">
+    <app-header></app-header>
+  </header>
+  <div class="m-grid__item m-grid__item--fluid m-grid m-grid--ver-desktop m-grid--desktop m-body">
+    <app-side-nav></app-side-nav>
+    <div class="m-grid__item m-grid__item--fluid m-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+<!-- Scroll Top -->
+<div class="m-scroll-top m-scroll-top--skin-top" data-toggle="m-scroll-top" data-scroll-offset="500" data-scroll-speed="300">
+  <i class="la la-arrow-up"></i>
+</div>

@@ -1,0 +1,17 @@
+.header-container {
+    width: 100%;
+}
+app-sidenav {
+    position: absolute;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    app-sidenav {
+        position: fixed;
+        right: 100%;
+        top: 0px;
+        z-index: 5;
+        width: auto;
+    }
+}
