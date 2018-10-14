@@ -7,6 +7,7 @@ import { ModalService } from 'src/app/components/modals/modal.service';
   styleUrls: ['./trackbase.component.scss']
 })
 export class TrackbaseComponent implements OnInit {
+  show: boolean;
   sList = [
     {
       'id': 1,
@@ -58,7 +59,7 @@ export class TrackbaseComponent implements OnInit {
     }
   ];
   constructor(private modal: ModalService) { }
-
+  
   ngOnInit() {
   }
 
