@@ -8,11 +8,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
-import { AccountManagementComponent } from './components/account-management/account-management.component';
+import { AccountManagementComponent } from './pages/account-management/account-management.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { TrackbaseComponent } from './pages/trackbase/trackbase.component';
 
 const routes = [
+  { path: '', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'account-management', component: AccountManagementComponent }
+  { path: 'account-management', component: AccountManagementComponent },
+  { path: 'trackbase', component: TrackbaseComponent },
 ];
 
 @NgModule({
@@ -22,7 +26,9 @@ const routes = [
     SideNavComponent,
     FooterComponent,
     LoginComponent,
-    AccountManagementComponent
+    AccountManagementComponent,
+    DashboardComponent,
+    TrackbaseComponent
   ],
   imports: [
     BrowserModule,

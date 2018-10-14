@@ -9,7 +9,7 @@ export class SideNavComponent implements OnInit {
   navItems = [
     {
       'item': 'Dashboard',
-      'link': '/'
+      'link': ''
     },
     {
       'item': 'Account Management',
