@@ -7,9 +7,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './components/login/login.component';
+import { AccountManagementComponent } from './components/account-management/account-management.component';
 
 const routes = [
-  // { path: 'add', component: AddComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'account-management', component: AccountManagementComponent }
 ];
 
 @NgModule({
@@ -17,7 +20,9 @@ const routes = [
     AppComponent,
     HeaderComponent,
     SideNavComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    AccountManagementComponent
   ],
   imports: [
     BrowserModule,
@@ -25,8 +30,7 @@ const routes = [
     FormsModule,
     RouterModule,
     RouterModule.forRoot(
-      routes,
-      {onSameUrlNavigation: 'reload'}
+      routes
     )
   ],
   providers: [],
