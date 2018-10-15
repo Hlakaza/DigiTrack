@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trackit.component.scss']
 })
 export class TrackitComponent implements OnInit {
+  show: boolean;
   trackingList = [
     {
       'id': 1,
