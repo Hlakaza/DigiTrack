@@ -65,5 +65,5 @@
         animation: bounce 2s infinite;
       }
       body{
-         background: #1e202f;
+         background: #1e202f !important;
       }
