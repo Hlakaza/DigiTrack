@@ -1,0 +1,117 @@
+<div class="m-subheader ">
+    <div class="d-flex align-items-center">
+      <div class="mr-auto">
+        <h3 class="display-3">
+          Trackit
+        </h3>
+      </div>
+    </div>
+  </div>
+  
+  <div class="m-content">
+    <div class="m-portlet">
+      <div class="m-portlet__body">
+            <div class="marg-top-1rem">
+              <h3 class="display-inline-block text-bold marg-right-1rem">
+                  <span *ngIf="show" >New</span>  Policy <span *ngIf="!show" >List</span>
+              </h3> 
+              <span *ngIf="!show" (click)="show=!show" class="cursor-pointer m-badge m-badge-large--success m-badge--wide">
+                  CREATE NEW POLICY
+              </span>
+            </div>
+            <div class="marg-top-1rem" *ngIf="!show">
+              <table class="" width="100%">
+                <thead>
+                  <tr>
+                    <th title="Field #1">No</th>
+                    <th data-sort="asc" title="Field #2">Policy Name</th>
+                    <th title="Field #3">Policy Description</th>
+                    <th title="Field #4">Process Owner</th>
+                    <th title="Field #5">Trackbase Type</th>
+                    <th title="Field #6">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of trackingList">
+                    <td>{{item.id}}</td>
+                    <td><b>{{item.sName}}</b></td>
+                    <td>{{item.description}}</td>
+                    <td>{{item.owner}}</td>
+                    <td>{{item.sType}}</td>
+                    <td class="table-buttons">
+                      <button type="button" class="btn m-btn--square  btn-outline-metal m-btn m-btn--outline-2x ">View</button>
+                      <button type="button" class="btn m-btn--square  btn-outline-primary m-btn m-btn--outline-2x ">Edit</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <form *ngIf="show" class="trackit-form spacing-top">
+                <h4 class="bold">Create New</h4>
+                <div class="row">
+                  <div class="col-sm-12">
+                      <label>TrackPoint</label>
+                      <div class="row border-area">
+                        <div class="col-lg-6">
+                          <select class="custom-select">
+                            <option disabled selected>Select Node</option>
+                            <option value="1">Node 1o1</option>
+                          </select>
+                        </div>
+                        <div class="col-lg-6">
+                          <select class="custom-select">
+                            <option disabled selected>Policy Owner: Select from employee list</option>
+                            <option value="">Jabulani khumalo</option>
+                          </select>
+                        </div>
+  
+                      </div>  
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="spacing-top">Policy Name</label>
+                    <input type="text" name="PolicyName" class="form-control m-input" placeholder="Type Policy Name">
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="spacing-top">Policy description</label>
+                    <input type="text" name="StepDescription" class="form-control m-input" placeholder="Type Policy description">
+                  </div>
+                  <div class="col-sm-12">
+                      <label class="spacing-top">Ownership</label>
+                      <select class="custom-select" >
+                          <option disabled selected>Select Ownership</option>
+                          <option value="01">Owned by</option>
+                      </select>
+                    <h4 class="bold spacing-top">Track Setup</h4>
+                    <label>Trackbase Type</label>
+                    <div class="row border-area">
+                      <div class="col-sm-6">
+                        <select class="custom-select" >
+                            <option disabled selected>Select from list</option>
+                            <option value="01">test 111</option>
+
+                        </select>
+                      </div>
+                      <div class="col-sm-6">
+                          <select class="custom-select" >
+                              <option disabled selected>Create New</option>
+                          </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                      <label class="spacing-top">End Game</label>
+                      <select class="custom-select" >
+                          <option >Select from list</option>
+                          <option >End game process</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="button" (click)="show=!show" class="spacing-top btn m-btn--pill btn-lg btn-primary">
+                       Save
+                    </button>
+                </div>
+              </form>
+      </div>
+    </div>
+  </div>

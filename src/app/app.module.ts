@@ -13,12 +13,14 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { TrackbaseComponent } from './pages/trackbase/trackbase.component';
 import { ModalsComponent } from './components/modals/modals.component';
 import { ModalDirective } from './components/modals/modal.directive';
+import { TrackitComponent } from './pages/trackit/trackit.component';
 
 const routes = [
   { path: '', component: DashboardComponent },
   { path: 'login', component: LoginComponent },
   { path: 'account-management', component: AccountManagementComponent },
   { path: 'trackbase', component: TrackbaseComponent },
+  { path: 'trackit', component: TrackitComponent }
 ];
 
 @NgModule({
@@ -32,7 +34,8 @@ const routes = [
     DashboardComponent,
     TrackbaseComponent,
     ModalsComponent,
-    ModalDirective
+    ModalDirective,
+    TrackitComponent
   ],
   imports: [
     BrowserModule,

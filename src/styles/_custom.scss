@@ -1,3 +1,12 @@
+@import "modals";
+@import "tabs";
+.trackit-form{
+  border:   2px solid #efefef;
+  padding: 40px;
+}
+.text-bold, .bold {
+   font-weight: bold;
+}
 .pad-l-r-1em {
     padding-left: 2.2em;
     padding-right: 2.2em;
@@ -198,4 +207,10 @@
     margin-top: 75px;
     overflow-y: auto;
 }
+}
+@media (max-width: 768px) {
+    .trackit-form{
+        padding: 0;
+        border: 0;
+    }
 }

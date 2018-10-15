@@ -1,0 +1,33 @@
+.reg-tabs {
+  background-color: #e1e2f6;
+.nav-link{
+    border: 2px solid transparent;
+ &.active {
+    border-right: 0;
+    background: #979cc6!important;
+    border: 2px solid #979cc6;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 46px;
+        top: 8px;
+        right: -24.4px;
+        bottom: 0;
+        border-right: 2px solid #979cc6;
+        border-bottom: 2px solid #979cc6;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        background: #979cc6;
+    }
+  }
+ }
+}
+
+.sequence-tab .tab-content {
+  padding: 42px;
+}
+.reg-tabs.no-marg-bot{
+  margin: -2px -3px;
+}

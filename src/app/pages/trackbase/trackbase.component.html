@@ -111,146 +111,147 @@
                   </table>
                 </div>
               </div>
+
               <div *ngIf="show" class="marg-top-1rem new-sequence-form">
                 <div class="marg-top-1rem">
                   <h3 class="display-inline-block text-bold marg-right-1rem">New Sequence</h3>
                 </div>
-                <ul class="reg-tab-boder no-marg-bot nav nav-tabs nav-fill" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#CreateSequence" aria-expanded="true">
-                      Create Sequence
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#CreateSteps" aria-expanded="false">
-                      Create Steps</a>
-                  </li>
-
-                </ul>
-                <div class="tab-content">
-                  <div  class="tab-pane active" id="CreateSequence" role="tabpanel">
-                    <form class="create-sequence--form spacing-top">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <label>Sequence Name</label>
-                          <input type="text" class="form-control m-input" placeholder="Type Sequence Name">
-                        </div>
-                        <div class="col-lg-6">
-                          <label>Sequence Type</label>
-                          <input type="text" class="form-control m-input" placeholder="Type Sequence type">
-                        </div>
-                        <div class="col-sm-12 spacing-top">
-                          <label>Process Owner</label>
-                          <div class="row border-area">
-                            <div class="col-lg-6">
-                              <select class="custom-select">
-                                <option disabled selected>Create from employee list</option>
-                                <option value="1">John Doe</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-6">
-                              <select class="custom-select">
-                                <option disabled selected>Create New (New Registration)</option>
-                                <option value="1">Jabulani khumalo</option>
-                              </select>
-                            </div>
-
+                <div class="sequence-tab reg-tab-boder">
+                  <ul class="reg-tabs reg-tab-boder no-marg-bot nav nav-tabs nav-fill" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#CreateSequence" aria-expanded="true">
+                        Create Sequence
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#CreateSteps" aria-expanded="false">
+                        Create Steps</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div  class="tab-pane active" id="CreateSequence" role="tabpanel">
+                      <form class="create-sequence--form spacing-top">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <label>Sequence Name</label>
+                            <input type="text" class="form-control m-input" placeholder="Type Sequence Name">
                           </div>
-                          <label class="spacing-top">Process Manager</label>
-                          <div class="row border-area">
-                            <div class="col-lg-6">
-                              <select class="custom-select">
-                                <option disabled selected>Create from employee list</option>
-                                <option value="1">John Doe</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-6">
-                              <select class="custom-select">
-                                <option disabled selected>Create New (New Registration)</option>
-                                <option value="1">Jabulani khumalo</option>
-                              </select>
-                            </div>
-                            <div class="col-lg-6 spacing-top">
-                              <span class="display-inline-block">Set time from time picker</span>
-                              <input style="width: auto" class="form-control m-input display-inline-block" type="time" value="13:45:00">
-                            </div>
-
+                          <div class="col-lg-6">
+                            <label>Sequence Type</label>
+                            <input type="text" class="form-control m-input" placeholder="Type Sequence type">
                           </div>
-                        </div>
-
-                        <label class="col-12 spacing-top">Sequence Start Point</label>
-                        <div class="col-lg-6">
-                          <input type="text" class="form-control m-input" placeholder="Specify Node">
-                        </div>
-                        <div class="col-lg-6">
-                          <input type="text" class="form-control m-input" placeholder="Specify Role">
-                        </div>
-                      </div>
-                      <div class="text-center">
-                        <button (click)="show=!show" type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
-                          Submit
-                        </button>
-                      </div>
-                    </form>
-                  </div>
-                  <div  class="tab-pane" id="CreateSteps" role="tabpanel">
-                    <form class="create-steps--form spacing-top">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <label>Step Name</label>
-                          <input type="text" name="StepName" class="form-control m-input" placeholder="Type Step Name">
-                        </div>
-                        <div class="col-lg-6">
-                          <label>Step description</label>
-                          <input type="text" name="StepDescription" class="form-control m-input" placeholder="Type Step description">
-                        </div>
-                        <div class="col-sm-12 spacing-top">
-                          <label>Step Owner</label>
-                          <div class="row border-area">
-                            <div class="col-lg-6">
-                              <select class="custom-select">
-                                <option disabled selected>Create from employee list</option>
-                                <option value="1">John Doe</option>
-                              </select>
+                          <div class="col-sm-12 spacing-top">
+                            <label>Process Owner</label>
+                            <div class="row border-area">
+                              <div class="col-lg-6">
+                                <select class="custom-select">
+                                  <option disabled selected>Create from employee list</option>
+                                  <option value="1">John Doe</option>
+                                </select>
+                              </div>
+                              <div class="col-lg-6">
+                                <select class="custom-select">
+                                  <option disabled selected>Create New (New Registration)</option>
+                                  <option value="1">Jabulani khumalo</option>
+                                </select>
+                              </div>
+  
                             </div>
-                            <div class="col-lg-6">
-                              <select class="custom-select">
-                                <option disabled selected>Create New (New Registration)</option>
-                                <option value="1">Jabulani khumalo</option>
-                              </select>
-                            </div>
-
-                          </div>
-                          <label class="spacing-top">Create Activities for this step</label>
-                          <div class="row border-area">
-                            <div class="col-sm-12">
-                              <select class="custom-select" >
-                                <option disabled selected>Add Activity</option>
-                              </select>
+                            <label class="spacing-top">Process Manager</label>
+                            <div class="row border-area">
+                              <div class="col-lg-6">
+                                <select class="custom-select">
+                                  <option disabled selected>Create from employee list</option>
+                                  <option value="1">John Doe</option>
+                                </select>
+                              </div>
+                              <div class="col-lg-6">
+                                <select class="custom-select">
+                                  <option disabled selected>Create New (New Registration)</option>
+                                  <option value="1">Jabulani khumalo</option>
+                                </select>
+                              </div>
+                              <div class="col-lg-6 spacing-top">
+                                <span class="display-inline-block">Set time from time picker</span>
+                                <input style="width: auto" class="form-control m-input display-inline-block" type="time" value="13:45:00">
+                              </div>
+  
                             </div>
                           </div>
+  
+                          <label class="col-12 spacing-top">Sequence Start Point</label>
+                          <div class="col-lg-6">
+                            <input type="text" class="form-control m-input" placeholder="Specify Node">
+                          </div>
+                          <div class="col-lg-6">
+                            <input type="text" class="form-control m-input" placeholder="Specify Role">
+                          </div>
                         </div>
-                      </div>
-                      <div class="text-left">
-                          <button (click)="modalOpen('newActivity')" type="button" href="#" class="b-rad-0 spacing-top btn btn-secondary btn-lg m-btn m-btn--custom m-btn--icon">
-                              <span>
-                                <i class="fa fa-plus-circle"></i>
+                        <div class="text-center">
+                          <button (click)="show=!show" type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
+                            Save
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                    <div  class="tab-pane" id="CreateSteps" role="tabpanel">
+                      <form class="create-steps--form spacing-top">
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <label>Step Name</label>
+                            <input type="text" name="StepName" class="form-control m-input" placeholder="Type Step Name">
+                          </div>
+                          <div class="col-lg-6">
+                            <label>Step description</label>
+                            <input type="text" name="StepDescription" class="form-control m-input" placeholder="Type Step description">
+                          </div>
+                          <div class="col-sm-12 spacing-top">
+                            <label>Step Owner</label>
+                            <div class="row border-area">
+                              <div class="col-lg-6">
+                                <select class="custom-select">
+                                  <option disabled selected>Create from employee list</option>
+                                  <option value="1">John Doe</option>
+                                </select>
+                              </div>
+                              <div class="col-lg-6">
+                                <select class="custom-select">
+                                  <option disabled selected>Create New (New Registration)</option>
+                                  <option value="1">Jabulani khumalo</option>
+                                </select>
+                              </div>
+  
+                            </div>
+                            <label class="spacing-top">Create Activities for this step</label>
+                            <div class="row border-area">
+                              <div class="col-sm-12">
+                                <select class="custom-select" >
+                                  <option disabled selected>Add Activity</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-left">
+                            <button (click)="modalOpen('newActivity')" type="button" href="#" class="b-rad-0 spacing-top btn btn-secondary btn-lg m-btn m-btn--custom m-btn--icon">
                                 <span>
-                                  Add Another Step
+                                  <i class="fa fa-plus-circle"></i>
+                                  <span>
+                                    Add Another Step
+                                  </span>
                                 </span>
-                              </span>
-                            </button>
-                      </div>
-                    </form>
-                    <div class="spacing-top text-center">
-                        <button type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
-                          Submit
-                        </button>
-                      </div>
+                              </button>
+                        </div>
+                      </form>
+                      <div class="spacing-top text-center">
+                          <button type="button" data-toggle="tab" class="spacing-top btn m-btn--pill btn-lg btn-primary">
+                            Save
+                          </button>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
-
             </div>
             <div class="tab-pane" id="SequenceActiveTracks" role="tabpanel">
 
