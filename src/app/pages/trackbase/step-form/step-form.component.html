@@ -1,0 +1,67 @@
+
+        <form class="trackit-form spacing-top">
+            <h4 class="bold">Create New</h4>
+            <div class="row">
+              <div class="col-sm-12">
+                  <label>TrackPoint</label>
+                  <div class="row border-area">
+                    <div class="col-lg-6">
+                      <select class="custom-select">
+                        <option disabled selected>Select Node</option>
+                        <option value="1">Node 1o1</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-6">
+                      <select class="custom-select">
+                        <option disabled selected>Policy Owner: Select from employee list</option>
+                        <option value="">Jabulani khumalo</option>
+                      </select>
+                    </div>
+
+                  </div>  
+              </div>
+              <div class="col-sm-6">
+                <label class="spacing-top">Policy Name</label>
+                <input type="text" name="PolicyName" class="form-control m-input" placeholder="Type Policy Name">
+              </div>
+              <div class="col-sm-6">
+                <label class="spacing-top">Policy description</label>
+                <input type="text" name="StepDescription" class="form-control m-input" placeholder="Type Policy description">
+              </div>
+              <div class="col-sm-12">
+                  <label class="spacing-top">Ownership</label>
+                  <select class="custom-select" >
+                      <option disabled selected>Select Ownership</option>
+                      <option value="01">Owned by</option>
+                  </select>
+                <h4 class="bold spacing-top">Track Setup</h4>
+                <label>Trackbase Type</label>
+                <div class="row border-area">
+                  <div class="col-sm-6">
+                    <select class="custom-select" >
+                        <option disabled selected>Select from list</option>
+                        <option value="01">test 111</option>
+
+                    </select>
+                  </div>
+                  <div class="col-sm-6">
+                      <select class="custom-select" >
+                          <option disabled selected>Create New</option>
+                      </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                  <label class="spacing-top">End Game</label>
+                  <select class="custom-select" >
+                      <option >Select from list</option>
+                      <option >End game process</option>
+                  </select>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" (click)="show=!show" class="spacing-top btn m-btn--pill btn-lg btn-primary">
+                   Save
+                </button>
+            </div>
+          </form>
