@@ -15,6 +15,9 @@ import { ModalsComponent } from './components/modals/modals.component';
 import { ModalDirective } from './components/modals/modal.directive';
 import { TrackitComponent } from './pages/trackit/trackit.component';
 import { StepFormComponent } from './pages/trackbase/step-form/step-form.component';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { TabComponent } from './components/tabs/tab.component';
+
 
 const routes = [
   { path: '', component: DashboardComponent },
@@ -37,7 +40,9 @@ const routes = [
     ModalsComponent,
     ModalDirective,
     TrackitComponent,
-    StepFormComponent
+    StepFormComponent,
+    TabsComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,

@@ -41735,7 +41735,7 @@ b, label{
 .nav-item:first-child .nav-link.active{
     margin-left: 0 !important;
 }
-.nav-link.active::before {
+/* .nav-link.active::before {
     content: "";
     position: absolute;
     width: 45px;
@@ -41747,7 +41747,7 @@ b, label{
     border-bottom: 2px solid #efefef;
     transform: rotate(-45deg);
     background: #dfe2ea;
-}
+} */
     .nav-item:last-child .nav-link.active::before, .m-tabs-line .nav-link.active::before{
         border-right: 0;
         border-bottom: 0;

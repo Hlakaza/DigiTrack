@@ -3,8 +3,7 @@ import { ModalService } from './modal.service';
 
 @Component({
   selector: 'app-modals',
-  templateUrl: './modals.component.html',
-  styleUrls: ['./modals.component.scss']
+  templateUrl: './modals.component.html'
 })
 export class ModalsComponent implements OnInit {
   modals = [];
