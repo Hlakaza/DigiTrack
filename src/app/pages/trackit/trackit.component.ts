@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-trackit',
-  templateUrl: './trackit.component.html',
-  styleUrls: ['./trackit.component.scss']
+  templateUrl: './trackit.component.html'
 })
 export class TrackitComponent implements OnInit {
   show: boolean;

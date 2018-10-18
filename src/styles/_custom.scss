@@ -175,7 +175,7 @@
  .border-area{
      border: 1px solid #b4b4b4;
      margin: 0 0;
-     padding: 20px 0;
+     padding: 40px 20px;
  }
  .cursor-pointer{
    cursor: pointer
@@ -188,6 +188,13 @@
   .btn{
     margin: 0 5px
   }
+}
+
+.border-bot-dot {
+  border-bottom: 1px dotted #000;
+}
+.pad-tb {
+  padding: 20px 0
 }
  td, th{padding: 10px}
  @media (min-width: 993px) {

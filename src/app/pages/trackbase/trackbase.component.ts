@@ -3,8 +3,7 @@ import { ModalService } from 'src/app/components/modals/modal.service';
 
 @Component({
   selector: 'app-trackbase',
-  templateUrl: './trackbase.component.html',
-  styleUrls: ['./trackbase.component.scss']
+  templateUrl: './trackbase.component.html'
 })
 export class TrackbaseComponent implements OnInit {
   show: boolean;

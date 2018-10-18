@@ -17,6 +17,8 @@ import { TrackitComponent } from './pages/trackit/trackit.component';
 import { StepFormComponent } from './pages/trackbase/step-form/step-form.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { TabComponent } from './components/tabs/tab.component';
+import { TrackbaseDashboardComponent } from './pages/trackbase/trackbase-dashboard/trackbase-dashboard.component';
+import { ActiveTrackComponent } from './pages/trackbase/active-track/active-track.component';
 
 
 const routes = [
@@ -42,7 +44,9 @@ const routes = [
     TrackitComponent,
     StepFormComponent,
     TabsComponent,
-    TabComponent
+    TabComponent,
+    TrackbaseDashboardComponent,
+    ActiveTrackComponent
   ],
   imports: [
     BrowserModule,
