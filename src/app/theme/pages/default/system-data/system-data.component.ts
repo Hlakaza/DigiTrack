@@ -8,7 +8,7 @@ import { ScriptLoaderService } from '../../../../_services/script-loader.service
     templateUrl: './system-data.component.html',
     encapsulation: ViewEncapsulation.None,
 })
-export class SystemComponent implements OnInit, AfterViewInit {
+export class SystemDataComponent implements OnInit, AfterViewInit {
 
     constructor(private _script: ScriptLoaderService) {}
     ngOnInit() {}

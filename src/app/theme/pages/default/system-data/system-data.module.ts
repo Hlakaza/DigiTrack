@@ -4,7 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { LayoutModule } from '../../../layouts/layout.module';
 import { DefaultComponent } from '../default.component';
-import { SystemComponent } from './system-data.component';
+import { SystemDataComponent } from './system-data.component';
+
 
 
 
@@ -17,7 +18,7 @@ const routes: Routes = [
         'children': [
             {
                 'path': '',
-                'component': SystemComponent
+                'component': SystemDataComponent
             }
         ]
     }
@@ -28,10 +29,10 @@ const routes: Routes = [
     ], exports: [
         RouterModule
     ], declarations: [
-        SystemComponent
+        SystemDataComponent
     ]
 })
-export class SetupModule {
+export class SystemDataModule {
 
 
 
