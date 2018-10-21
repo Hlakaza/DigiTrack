@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./node_modules/rxjs-compat/_esm5/BehaviorSubject.js"],"names":[],"mappings":";;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAuC;AACvC,2C","file":"common.js","sourcesContent":["export { BehaviorSubject } from 'rxjs';\n//# sourceMappingURL=BehaviorSubject.js.map"],"sourceRoot":""}
