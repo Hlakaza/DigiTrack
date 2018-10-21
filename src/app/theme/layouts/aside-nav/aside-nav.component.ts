@@ -3,15 +3,15 @@ import { Helpers } from '../../../helpers';
 
 declare let mLayout: any;
 @Component({
-    selector: "app-aside-nav",
-    templateUrl: "./aside-nav.component.html",
+    selector: 'app-aside-nav',
+    templateUrl: './aside-nav.component.html',
     encapsulation: ViewEncapsulation.None,
 })
 export class AsideNavComponent implements OnInit, AfterViewInit {
     navItems = [
         {
           'item': 'Dashboard',
-          'link': 'index'
+          'link': 'home'
         },
         {
           'item': 'Account Management',

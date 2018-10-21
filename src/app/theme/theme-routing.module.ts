@@ -17,10 +17,40 @@ const routes: Routes = [
                 'path': 'angular\/primeng',
                 'loadChildren': '.\/pages\/default\/angular\/primeng\/primeng.module#PrimengModule'
             },
+            /**
+             * Digitrack Routes
+             */
             {
-                'path': 'index',
+                'path': 'home',
                 'loadChildren': '.\/pages\/default\/index\/index.module#IndexModule'
             },
+            {
+                'path': 'account-management',
+                'loadChildren': '.\/pages\/default\/account-management\/account-management.module#AccountManagementModule'
+            },
+            {
+                'path': 'trackbase',
+                'loadChildren': '.\/pages\/default\/trackbase\/trackbase.module#TrackbaseModule'
+            },
+            {
+                'path': 'trackit',
+                'loadChildren': '.\/pages\/default\/trackit\/trackit.module#TrackitModule'
+            },
+            {
+                'path': 'reports',
+                'loadChildren': '.\/pages\/default\/reports\/reports.module#ReportsModule'
+            },
+            {
+                'path': 'system-data',
+                'loadChildren': '.\/pages\/default\/system-data\/system-data.module#SystemDataModule'
+            },
+            {
+                'path': 'setup',
+                'loadChildren': '.\/pages\/default\/setup\/setup.module#SetupModule'
+            },
+            /**
+             * End Digitrack Routes
+             */
             {
                 'path': 'components\/base\/typography',
                 'loadChildren': '.\/pages\/default\/components\/base\/base-typography\/base-typography.module#BaseTypographyModule'
