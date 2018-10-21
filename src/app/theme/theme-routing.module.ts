@@ -48,6 +48,10 @@ const routes: Routes = [
                 'path': 'setup',
                 'loadChildren': '.\/pages\/default\/setup\/setup.module#SetupModule'
             },
+            {
+                'path': 'profile',
+                'loadChildren': '.\/pages\/default\/profile\/profile.module#ProfileModule'
+            },
             /**
              * End Digitrack Routes
              */
