@@ -13,6 +13,9 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { HrefPreventDefaultDirective } from '../../_directives/href-prevent-default.directive';
 import { UnwrapTagDirective } from '../../_directives/unwrap-tag.directive';
+import { TabsComponent } from './tabs/tabs.component';
+import { ModalsComponent } from './modals/modals.component';
+import { TabComponent } from './tabs/tab.component';
 
 @NgModule({
     declarations: [
@@ -27,6 +30,9 @@ import { UnwrapTagDirective } from '../../_directives/unwrap-tag.directive';
         TooltipsComponent,
         HrefPreventDefaultDirective,
         UnwrapTagDirective,
+        TabsComponent,
+        TabComponent,
+        ModalsComponent,
     ],
     exports: [
         LayoutComponent,
@@ -38,6 +44,9 @@ import { UnwrapTagDirective } from '../../_directives/unwrap-tag.directive';
         QuickSidebarComponent,
         ScrollTopComponent,
         TooltipsComponent,
+        TabsComponent,
+        TabComponent,
+        ModalsComponent,
         HrefPreventDefaultDirective,
     ],
     imports: [

@@ -1,5 +1,8 @@
 import { Injectable, Output, EventEmitter } from '@angular/core';
 
+@Injectable({
+  providedIn: 'root'
+})
 export class ModalService {
   @Output() toggleModal: EventEmitter<string> = new EventEmitter<string>();
   @Output() bodyModal: EventEmitter<string> = new EventEmitter<string>();

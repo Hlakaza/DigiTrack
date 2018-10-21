@@ -6,9 +6,6 @@ const routes: Routes = [
     { path: 'login', loadChildren: './auth/auth.module#AuthModule' },
     { path: 'logout', component: LogoutComponent },
     { path: '', redirectTo: 'index', pathMatch: 'full' },
-    // { path: 'account-management', component: AccountManagementComponent },
-    // { path: 'trackbase', component: TrackbaseComponent },
-    // { path: 'trackit', component: TrackitComponent }
 ];
 
 @NgModule({

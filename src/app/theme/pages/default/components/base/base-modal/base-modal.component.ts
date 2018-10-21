@@ -3,8 +3,8 @@ import { Helpers } from '../../../../../../helpers';
 
 
 @Component({
-    selector: ".m-grid__item.m-grid__item--fluid.m-wrapper",
-    templateUrl: "./base-modal.component.html",
+    selector: '.m-grid__item.m-grid__item--fluid.m-wrapper',
+    templateUrl: './base-modal.component.html',
     encapsulation: ViewEncapsulation.None,
 })
 export class BaseModalComponent implements OnInit {

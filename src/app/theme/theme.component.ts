@@ -7,8 +7,8 @@ declare let mApp: any;
 declare let mUtil: any;
 declare let mLayout: any;
 @Component({
-    selector: ".m-grid.m-grid--hor.m-grid--root.m-page",
-    templateUrl: "./theme.component.html",
+    selector: '.m-grid.m-grid--hor.m-grid--root.m-page',
+    templateUrl: './theme.component.html',
     encapsulation: ViewEncapsulation.None,
 })
 export class ThemeComponent implements OnInit {
@@ -39,7 +39,7 @@ export class ThemeComponent implements OnInit {
                 (<any>mUtil).init();
                 Helpers.setLoading(false);
                 // content m-wrapper animation
-                let animation = 'm-animate-fade-in-up';
+                const animation = 'm-animate-fade-in-up';
                 $('.m-wrapper').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e) {
                     $('.m-wrapper').removeClass(animation);
                 }).removeClass(animation).addClass(animation);

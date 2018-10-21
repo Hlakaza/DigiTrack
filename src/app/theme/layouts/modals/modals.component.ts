@@ -3,9 +3,11 @@ import { ModalService } from './modal.service';
 
 @Component({
   selector: 'app-modals',
-  templateUrl: './modals.component.html'
+  templateUrl: './modals.component.html',
+  styleUrls: ['./modals.component.scss']
 })
 export class ModalsComponent implements OnInit {
+
   modals = [];
   modalToggle = [];
   modalStyles = {};
@@ -46,5 +48,4 @@ export class ModalsComponent implements OnInit {
   modalClear() {
     this.modal.clearAll();
   }
-
 }

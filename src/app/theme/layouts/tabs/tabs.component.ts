@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterContentInit, ContentChildren, Input, QueryList } from '@angular/core';
+import { Component, OnInit, Input, ContentChildren, QueryList, AfterContentInit } from '@angular/core';
 import { TabComponent } from './tab.component';
 
 @Component({
@@ -7,7 +7,6 @@ import { TabComponent } from './tab.component';
   styleUrls: ['./tabs.component.scss']
 })
 export class TabsComponent implements OnInit, AfterContentInit {
-
   constructor() { }
   activeTabs: any[];
 
